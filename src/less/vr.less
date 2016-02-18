@@ -36,19 +36,25 @@ body {
 		position: relative;
 	}
 	h1 {
-		font: 300 20px "Montserrat", Helvetica, Arial, sans-serif;
+/*		font: 300 20px "Montserrat", Helvetica, Arial, sans-serif;
 		text-transform: uppercase;
 		letter-spacing: 3px;
 		padding-top: 1em;
 		padding-bottom: .5em;
-		text-align: center;
+		text-align: center; */
+		img {
+			display: block;
+			width: 400px;
+			max-width: 100%;
+			margin: 1em auto;
+		}
 		@media @large {
 			position: absolute;
-			top: 34%;
+			top: 18%;
 			padding-top: 0;
 			font-size: 34px;
 			letter-spacing: 8px;
-			margin-left: @side-margin;
+			margin: 0 0 0 @side-margin;
 		}
 	}
 	h3 {
@@ -126,6 +132,10 @@ h2 {
 .section.video {
 	padding-left: 0;
 	padding-right: 0;
+}
+
+.illustration img {
+	max-width: 100%;
 }
 
 p {

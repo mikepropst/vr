@@ -17,9 +17,11 @@ gulp.task('connect', function() {
 // watcher
 gulp.task('watch',['connect'],function(){
 	gulp.watch("./src/jade/**/*",['jade']);
+	gulp.watch("./src/less/**/*",['less']);
 });
 
-//Jade templates
+// Jade templates
+
 gulp.task('jade',function(){
 	gulp.src("./src/jade/*.jade")
 	.pipe(jade())
@@ -29,7 +31,7 @@ gulp.task('jade',function(){
 
 //Clean dist
 gulp.task('cleaner',function(){
-	del("./dist");
+	del.sync("./dist/**/*");
 });
 
 //move images and scripts
